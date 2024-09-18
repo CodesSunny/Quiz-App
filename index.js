@@ -106,7 +106,8 @@ function selectAns() {
     selectAns();
     currentIndex++; //increment index to find next element
     if(currentIndex >= questions.length){
-      currentIndex = 0;
+      currentIndex = 0;  //reset index when complete
+      score =0;  // reset score
     }
     showQue();      // call function to display que index wise
     showAnswer();
